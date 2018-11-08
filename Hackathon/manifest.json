@@ -1,0 +1,17 @@
+{
+    "name": "Stain",
+    "version": "1.0",
+    "description": "Ability to draw shapes, lines, and implement text live to the webpage. Other features include ability to take screenshots and restart.",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["sketch.js","p5.js", "p5.dom.js", "jquery-3.3.1.min.js" ]
+    }],
+    "browser_action": {
+    	"default_popup" : "popup.html"
+    },
+    "permissions": [
+    	"activeTab"
+    ]
+
+}
